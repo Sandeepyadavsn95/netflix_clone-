@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url("img/10.jpg"); */
+  /* background-color: black; */
+  color: white;
+} 
+.back{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  opacity: 18.5;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: red;
+}
+.container::before{
+  
+  /* position: absolute;
+  z-index: -1; */
+}
+
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: dodgerblue;
+}
+.item {
+  width: 100%;
+}
+/* .carousel-films{
+    display: flex;
+} */
+.owl-carousel {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(4, 2fr);
+}
+
+.film-principal {
+  font-size: 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../img/bg.jpg");
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-size: cover;
+}
+
+.film-principal .description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-shadow: 2px 1px dodgerblue;
+}
+
+.film-principal .title {
+  margin-top: 15px;
+  font-size: 40px;
+}
+
+.button-watch {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 30px;
+}
+
+.button-watch:hover {
+  background-color: dodgerblue;
+  color: black;
+  border-radius: 25px;
+  box-shadow: 10px 13px 25px dodgerblue;
+}
+
+.container {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.film-principal .container {
+  width: 70%;
+}
+
+.box-film {
+  height: 40vh;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  display: flex;
+  flex: row;
+}
+
+.carousel-films {
+  margin-top: 5px;
+}
